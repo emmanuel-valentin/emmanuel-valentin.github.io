@@ -1,4 +1,6 @@
+import AOS from 'aos';
 import 'normalize.css';
+import 'aos/dist/aos.css';
 const toogleButtonElement = document.querySelector('#btn-nav');
 const navElement = document.querySelector('#nav');
 
@@ -20,3 +22,5 @@ toogleButtonElement.addEventListener('click', setIsNavVisible);
 
 // Esconde el nav cuando se hace click en algún enlace
 navElement.addEventListener('click', setIsNavVisible);
+
+AOS.init();
