@@ -144,9 +144,33 @@ abbr[title] {
   color: var(--text-100);
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 img {
   max-width: 100%;
   object-fit: cover;
+}
+
+input:not([type='submit']),
+textarea {
+  border: none;
+  background-color: var(--bg-200);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--text-200);
+}
+
+input:not([type='submit']):active,
+input:not([type='submit']):focus,
+textarea:active,
+textarea:focus {
+  outline: var(--accent-100) solid 0.1rem;
+}
+
+textarea {
+  resize: none;
 }
 
 /** Header & Navbar **/
@@ -260,7 +284,7 @@ img {
   place-items: center;
   text-align: center;
   background-color: var(--bg-200);
-  height: calc(100dvh - 9rem);
+  /* height: calc(100dvh - 9rem); */
 }
 
 .about-me h1 {
@@ -279,6 +303,10 @@ img {
     width: 30rem;
     height: 30rem;
   }
+}
+
+.about-me-text {
+  justify-self: end;
 }
 
 /** Card **/
@@ -427,4 +455,25 @@ img {
   border-radius: 50%;
   margin: 2rem auto;
   object-fit: cover;
+}
+
+/** Form **/
+
+.contact h3 {
+  margin-top: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.form label {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
