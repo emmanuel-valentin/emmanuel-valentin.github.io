@@ -1,6 +1,8 @@
 import AOS from 'aos';
 import 'normalize.css';
 import 'aos/dist/aos.css';
+import './style.css';
+
 const toogleButtonElement = document.querySelector('#btn-nav');
 const navElement = document.querySelector('#nav');
 
