@@ -42,6 +42,7 @@
         <button id="btn-nav" class="btn-nav">
           <img
             src="./src/assets/icons/menu.svg"
+            loading="lazy"
             alt="Menu icon"
             width="20"
             height="23.8"
@@ -82,11 +83,17 @@
           y
           <span class="text-bold">Desarrollador Web Frontend</span>
         </p>
+        <p class="about-me-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aperiam
+          sapiente aliquid, nulla asperiores dolorum accusamus laudantium
+          provident repellat autem vitae quam laboriosam accusantium beatae
+          culpa, officiis perspiciatis corrupti dolores.
+        </p>
       </div>
     </main>
     <section id="proyectos" class="container border" data-aos="fade-up">
       <h2 class="underline primary-100">Proyectos</h2>
-      <div class="projects">
+      <div class="cards overflow">
         <div class="project card" data-aos="fade-up">
           <header class="card-body">
             <picture>
@@ -200,7 +207,7 @@
       data-aos="fade-up"
     >
       <h2 class="underline primary-100">Educación</h2>
-      <div class="schools">
+      <div class="cards overflow">
         <div class="school card" data-aos="fade-up">
           <header>
             <picture>
@@ -293,9 +300,103 @@
     </section>
     <section class="container border" data-aos="fade-up">
       <h2 class="underline primary-100">Tecnologías</h2>
+      <div class="cards overflow">
+        <div class="card school" data-aos="fade-up">
+          <header>
+            <picture>
+              <source
+                srcset="./src/assets/img/tecnologias/design.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./src/assets/img/tecnologias/design.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./src/assets/img/tecnologias/design.jpg"
+                alt="Software de siseño abierto de fondo"
+                width="500"
+                height="300"
+              />
+            </picture>
+            <h3>Diseño</h3>
+          </header>
+          <main>
+            Diseño de interfaces gráficas con ayuda de aplicaciones de diseño
+            como <span class="text-bold">Figma</span> y
+            <span class="text-bold">Photoshop</span>, siguiendo las mejores
+            prácticas para garantizar diseños simples, intuitivos y agradables.
+          </main>
+        </div>
+        <div class="card school" data-aos="fade-up">
+          <header>
+            <picture>
+              <source
+                srcset="./src/assets/img/tecnologias/code.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./src/assets/img/tecnologias/code.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./src/assets/img/tecnologias/code.jpg"
+                alt="Programador escribiendo código"
+                width="500"
+                height="300"
+              />
+            </picture>
+            <h3>Programación</h3>
+          </header>
+          <main>
+            <p>
+              Desarrollo de aplicaciones web usando tecnologías como
+              <span class="text-bold">HTML</span>,
+              <span class="text-bold">CSS</span> y
+              <span class="text-bold">JavaScript</span>. Además de frameworks y
+              librerías como <span class="text-bold">React</span> y
+              <span class="text-bold">Next.js</span>
+              facilitando su creación y diseño.
+            </p>
+          </main>
+        </div>
+        <div class="card school" data-aos="fade-up">
+          <header>
+            <picture>
+              <source
+                srcset="./src/assets/img/tecnologias/tools.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./src/assets/img/tecnologias/tools.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./src/assets/img/tecnologias/tools.jpg"
+                alt="Software controlador de versiones abierto de fondo"
+                width="500"
+                height="300"
+              />
+            </picture>
+            <h3>Herramientas</h3>
+          </header>
+          <main>
+            <p>
+              Uso de herramientas para mejorar el flujo de trabajo individual y
+              colaborativo usando herramientas como
+              <span class="text-bold">Git</span>,
+              <span class="text-bold">GitHub</span> y gestores de dependencias.
+            </p>
+          </main>
+        </div>
+      </div>
     </section>
     <section class="container border" data-aos="fade-up">
       <h2 class="underline primary-100">Contacto</h2>
+      <h3>¡Trabajemos juntos y construyamos algo nuevo!</h3>
       <form action="https://formspree.io/f/mpzgwqgb" method="post">
         <label
           >Nombre:
@@ -332,7 +433,7 @@
             autocomplete="off"
           ></textarea>
         </label>
-        <input class="btn" type="submit" value="Enviar formulario" />
+        <input class="btn" type="submit" />
       </form>
     </section>
     <footer class="footer" data-aos="fade-up">
