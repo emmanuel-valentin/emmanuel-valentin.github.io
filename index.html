@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <title>Emmanuel Valentin</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="./src/assets/favicon/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="./src/assets/favicon/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="./src/assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          class="logo"
+          src="./src/assets/icons/logo.svg"
+          alt="Emmanuel Valentin Logo"
+        />
+        <button id="btn-nav" class="btn-nav">
+          <img src="./src/assets/icons/menu.svg" alt="Menu icon" />
+        </button>
+        <nav id="nav" class="nav d-none">
+          <!-- <a href="#sobre-mi">Sobre mí</a> -->
+          <a href="#proyectos">Proyectos</a>
+          <a href="#educacion">Educación</a>
+          <a href="#">Tecnologías</a>
+          <a href="#">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main id="sobre-mi" class="about-me">
+      <div class="container">
+        <picture>
+          <source
+            srcset="./src/assets/img/emmanuel_valentin.avif"
+            type="image/avif"
+          />
+          <source
+            srcset="./src/assets/img/emmanuel_valentin.webp"
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            src="./src/assets/img/emmanuel_valentin.jpg"
+            alt="Foto de Emmanuel Valentin"
+            width="500"
+            height="300"
+          />
+        </picture>
+        <h1>Emmanuel Valentin</h1>
+        <p>
+          Estudiante de
+          <span class="text-bold">Ingeniería en Sistemas Computacionales</span>
+          y
+          <span class="text-bold">Desarrollador Web Frontend</span>
+        </p>
+      </div>
+    </main>
+    <section id="proyectos" class="container border">
+      <h2 class="underline primary-100">Proyectos</h2>
+      <div class="projects">
+        <div class="project card">
+          <header class="card-body">
+            <picture>
+              <source
+                srcset="./src/assets/img/proyectos/dgs.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./src/assets/img/proyectos/dgs.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./src/assets/img/proyectos/dgs.jpg"
+                alt=""
+                width="500"
+                height="300"
+              />
+            </picture>
+            <h3>Hidráulica DGS</h3>
+          </header>
+          <main class="card-body">
+            <p>
+              Página web para un negocio dedicado a la venta de productos
+              hidráulicos. Construido en <span class="text-bold">Next.js</span>,
+              se trata de un proyecto freelance donde colaboré con el diseño
+              realizado en <span class="text-bold">Figma</span> y su desarrollo.
+            </p>
+          </main>
+          <footer>
+            <a class="btn" href="#">Ver más</a>
+          </footer>
+        </div>
+        <div class="project card">
+          <header class="card-body">
+            <picture>
+              <source
+                srcset="./src/assets/img/proyectos/gif-expert.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./src/assets/img/proyectos/gif-expert.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./src/assets/img/proyectos/gif-expert.jpg"
+                alt=""
+                width="500"
+                height="300"
+              />
+            </picture>
+            <h3>Gif Expert App</h3>
+          </header>
+          <main class="card-body">
+            <p>
+              Aplicación que consume la
+              <span class="text-bold">API de Giphy</span> para mostrar gifs. Fue
+              realizada como parte de un curso de
+              <span class="text-bold">React</span> donde también se utilizó
+              <span class="text-bold">Jest</span> y
+              <span class="text-bold">React testing library</span> para la
+              creación de pruebas unitarias y de integración.
+            </p>
+          </main>
+          <footer>
+            <a class="btn" href="#">Ver más</a>
+          </footer>
+        </div>
+        <div class="project card">
+          <header class="card-body">
+            <picture>
+              <source
+                srcset="./src/assets/img/proyectos/todo.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./src/assets/img/proyectos/todo.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./src/assets/img/proyectos/todo.jpg"
+                alt=""
+                width="500"
+                height="300"
+              />
+            </picture>
+            <h3>Todo App</h3>
+          </header>
+          <main class="card-body">
+            <p>
+              Aplicación de tareas construida únicamente con
+              <span class="text-bold">HTML</span>,
+              <span class="text-bold">CSS</span> y
+              <span class="text-bold">JavaScript</span>. Hace uso del local
+              storage para almacenar las tareas y su estado. Esta aplicación fue
+              construida como parte de un curso de
+              <span class="text-bold">JavaScript</span>.
+            </p>
+          </main>
+          <footer>
+            <a class="btn" href="#">Ver más</a>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <section id="educacion" class="education container border">
+      <h2 class="underline primary-100">Educación</h2>
+      <div class="schools">
+        <div class="school card">
+          <header>
+            <picture>
+              <source
+                srcset="./src/assets/img/educacion/escom.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./src/assets/img/educacion/escom.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./src/assets/img/educacion/escom.jpg"
+                alt="Escuela Superior de Cómputo"
+                width="500"
+                height="300"
+              />
+            </picture>
+            <h3>Escuela Superior de Cómputo</h3>
+          </header>
+          <main>
+            <p>
+              Estudiante de Ingeniería en Sistemas Computacionales. Actualmente
+              curso el sexto semestre.
+            </p>
+          </main>
+          <footer><time>2020</time> - <time>Actualmente</time></footer>
+        </div>
+        <div class="school card">
+          <header>
+            <picture>
+              <source
+                srcset="./src/assets/img/educacion/telefonica.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./src/assets/img/educacion/telefonica.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./src/assets/img/educacion/telefonica.jpg"
+                alt="Escuela Superior de Cómputo"
+                width="500"
+                height="300"
+              />
+            </picture>
+            <h3>Fundación Telefónica y Fundación de Apoyo a la Juventud</h3>
+          </header>
+          <main>
+            <p>Curso de Habilidades Socioemocionales y Community Management.</p>
+          </main>
+          <footer>
+            <time>2019</time>
+          </footer>
+        </div>
+        <div class="school card">
+          <header>
+            <picture>
+              <source
+                srcset="./src/assets/img/educacion/cecyt-8.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./src/assets/img/educacion/cecyt-8.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./src/assets/img/educacion/cecyt-8.jpg"
+                alt="Escuela Superior de Cómputo"
+                width="500"
+                height="300"
+              />
+            </picture>
+            <h3>
+              <abbr title="Centro de Estudios Científicos y Tecnológicos"
+                >CECyT</abbr
+              >
+              8 "Narciso Bassols"
+            </h3>
+          </header>
+          <main>
+            <p>Graduado en la carrera de Técnico en Computación.</p>
+          </main>
+          <footer><time>2017</time> - <time>2020</time></footer>
+        </div>
+      </div>
+    </section>
+    <section class="container border">
+      <h2 class="underline primary-100">Contacto</h2>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <img
+          class="logo"
+          src="./src/assets/icons/logo.svg"
+          alt="Emmanuel Valentin Logo"
+        />
+        <div class="footer-social-media">
+          <a href="https://github.com/emmanuel-valentin" target="_blank">
+            <img
+              src="./src/assets/icons/github.svg"
+              loading="lazy"
+              alt="GitHub Logo"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://linkedin.com/in/emmanuel-valentin/" target="_blank">
+            <img
+              src="./src/assets/icons/linkedin.svg"
+              loading="lazy"
+              alt="LinkedIn Logo"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="mailto:emmmanuel-valentin@outlook" target="_blank">
+            <img
+              src="./src/assets/icons/email.svg"
+              loading="lazy"
+              alt="Email logo"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a href="https://instagram.com/v2.1.0/" target="_blank">
+            <img
+              src="./src/assets/icons/instagram.svg"
+              loading="lazy"
+              alt="Instagram logo"
+              width="40"
+              height="40"
+            />
+          </a>
+        </div>
+        <div class="footer-develper-info">
+          <p>
+            Desarrollado por <span class="text-bold">Emmanuel Valentin</span>
+          </p>
+          <p>Todos los derechos reservados - 2023</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
