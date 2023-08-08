@@ -11,9 +11,9 @@ const setIsNavVisible = (event) => {
   let isNavVisible = !navElement.classList.contains('d-none');
   isNavVisible
     ? (toogleButtonElement.innerHTML =
-        '<img src="./src/assets/icons/menu.svg" alt="Menu icon" width="20" height="23.8" />')
+        '<img src="./assets/icons/menu.svg" alt="Menu icon" width="20" height="23.8" />')
     : (toogleButtonElement.innerHTML =
-        '<img src="./src/assets/icons/close.svg" alt="Close icon" width="20" height="23.8" />');
+        '<img src="./assets/icons/close.svg" alt="Close icon" width="20" height="23.8" />');
 
   navElement.classList.toggle('d-none');
 
