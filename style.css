@@ -192,6 +192,7 @@ textarea {
   grid-template-columns: 6fr 2fr;
   gap: 1rem;
   align-items: center;
+  justify-items: self-start;
   text-align: center;
 }
 
