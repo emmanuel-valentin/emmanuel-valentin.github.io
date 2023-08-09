@@ -29,6 +29,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  line-height: 1.5;
   background-color: var(--bg-100);
   color: var(--text-200);
   font-family: var(--primary-font);
@@ -59,13 +60,13 @@ abbr[title] {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 
@@ -134,6 +135,7 @@ abbr[title] {
   width: 100%;
   height: 4rem;
   padding: 1rem;
+  line-height: initial;
   font-family: var(--secondary-font);
   font-weight: 900;
   text-align: center;
@@ -175,30 +177,27 @@ textarea {
 
 /** Header & Navbar **/
 .header {
+  position: sticky;
+  top: 0;
   z-index: 1;
   color: var(--primary-300);
   background-color: var(--bg-200);
-  border-bottom: 0.1rem solid var(--bg-300);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .header .container {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 6fr 2fr;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .header .container {
-    grid-template-columns: 3fr 5fr;
-  }
-}
-
 @media (min-width: 992px) {
   .header .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 6fr;
   }
 }
 
@@ -246,7 +245,7 @@ textarea {
     height: auto;
     grid-column: unset;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 }
 
@@ -269,37 +268,32 @@ textarea {
   border-radius: 1rem;
 }
 
-/* .nav a {
-  border-color: var(--bg-300);
-} */
-
 .nav a:hover {
   color: var(--accent-100);
   border-color: var(--bg-300);
 }
 
 /** Sobre mí  **/
-.about-me {
+.presentation {
   display: grid;
   place-items: center;
   text-align: center;
-  background-color: var(--bg-200);
-  /* height: calc(100dvh - 9rem); */
 }
 
-.about-me h1 {
+.presentation h1 {
   margin-bottom: 0;
+  color: var(--accent-100);
   font-size: 4.8rem;
 }
 
-.about-me img {
+.presentation img {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
 }
 
 @media (min-width: 768px) {
-  .about-me img {
+  .presentation img {
     width: 30rem;
     height: 30rem;
   }

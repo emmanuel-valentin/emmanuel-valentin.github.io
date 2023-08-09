@@ -7,7 +7,6 @@ const toogleButtonElement = document.querySelector('#btn-nav');
 const navElement = document.querySelector('#nav');
 
 const setIsNavVisible = (event) => {
-  console.log(event.target);
   let isNavVisible = !navElement.classList.contains('d-none');
   isNavVisible
     ? (toogleButtonElement.innerHTML =

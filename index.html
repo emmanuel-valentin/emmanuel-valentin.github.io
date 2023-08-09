@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Emmanuel Valentin" />
+    <meta property="og:title" content="Emmanuel Valentin ">
     <meta
       name="description"
-      content="Portafolio web de Emmanuel Valentin. Estudiante de Ingniería y Desarrollador Web. "
+      content="Emmanuel Valentin. Estudiante de Ingeniería y Desarrollador Web. Amante de la programación, escuchar música y del deporte. Busco mejorar cada día a través del aprendizaje continuo y me gusta colaborar en equipo y compartir mis conocimientos con los demás."
     />
+    <meta property="og:description" content="Emmanuel Valentin. Estudiante de Ingeniería y Desarrollador Web. Amante de la programación, escuchar música y del deporte. Busco mejorar cada día a través del aprendizaje continuo y me gusta colaborar en equipo y compartir mis conocimientos con los demás.">
+    <meta property="og:image" content="./img/emmanuel-valentin.jpg">
+    <meta property="og:type" content="website">
     <meta
       name="keywords"
       content="HTML, CSS, JavaScript, React, Next.js, Web, Software, Developer"
@@ -58,43 +62,50 @@
           />
         </button>
         <nav id="nav" class="nav d-none">
-          <!-- <a href="#sobre-mi">Sobre mí</a> -->
+          <a href="#sobre-mi">Sobre mí</a>
           <a href="#proyectos">Proyectos</a>
           <a href="#educacion">Educación</a>
-          <a href="#">Tecnologías</a>
-          <a href="#">Contacto</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contacto">Contacto</a>
         </nav>
       </div>
+      </div>
     </header>
-    <main class="about-me">
-      <div class="container">
-        <picture>
-          <source
-            srcset="./src/assets/img/emmanuel_valentin.avif"
-            type="image/avif"
-          />
-          <source
-            srcset="./src/assets/img/emmanuel_valentin.webp"
-            type="image/webp"
-          />
-          <img
-            loading="eager"
-            src="./src/assets/img/emmanuel_valentin.jpg"
-            alt="Foto de Emmanuel Valentin"
-            width="500"
-            height="300"
-          />
-        </picture>
-        <h1>Emmanuel Valentin</h1>
+    <main class="presentation container">
+      <picture>
+        <source
+          srcset="./src/assets/img/emmanuel_valentin.avif"
+          type="image/avif"
+        />
+        <source
+          srcset="./src/assets/img/emmanuel_valentin.webp"
+          type="image/webp"
+        />
+        <img
+          loading="eager"
+          src="./src/assets/img/emmanuel_valentin.jpg"
+          alt="Foto de Emmanuel Valentin"
+          width="500"
+          height="300"
+        />
+      </picture>
+      <h1>Emmanuel Valentin</h1>
+      <p>
+        Estudiante de
+        <span class="text-bold">Ingeniería en Sistemas Computacionales</span>
+        y
+        <span class="text-bold">Desarrollador Web Frontend</span>
+      </p>
+    </main>
+    <section id="sobre-mi" class="about-me container border">
+      <div data-aos="fade-up">
+        <h2 class="underline primary-100">Sobre mí</h2>
         <p>
-          Estudiante de
-          <span class="text-bold">Ingeniería en Sistemas Computacionales</span>
-          y
-          <span class="text-bold">Desarrollador Web Frontend</span>
+          Estudiante de ingeniería en <span class="text-bold"><abbr title="Escuela Superior de Cómputo">ESCOM</abbr></span> que recientemente se interesó en el <span class="text-bold">Desarrollo Web Frontend</span>. Amante de la <span class="text-bold">programación</span>, <span class="text-bold">escuchar música</span> y del <span class="text-bold">deporte</span>. Busco mejorar cada día a través del <span class="text-bold">aprendizaje continuo</span>y me gusta <span class="text-bold">colaborar en equipo</span> y <span class="text-bold">compartir mis conocimientos</span> con los demás.
         </p>
       </div>
-    </main>
-    <section id="proyectos" class="container border" data-aos="fade-up">
+    </section>
+    <section id="proyectos" class="container border">
       <h2 class="underline primary-100">Proyectos</h2>
       <div class="cards overflow">
         <div class="project card" data-aos="fade-up">
@@ -121,13 +132,13 @@
           <main class="card-body">
             <p>
               Página web para un negocio dedicado a la venta de productos
-              hidráulicos. Construido en <span class="text-bold">Next.js</span>,
-              se trata de un proyecto freelance donde colaboré con el diseño
-              realizado en <span class="text-bold">Figma</span> y su desarrollo.
+              hidráulicos. Fue realizada <span class="text-bold">Next.js</span> y 
+              se trata de un proyecto freelance donde tuve la oportunidad de colaborar con el diseño
+              realizado en <span class="text-bold">Figma</span> y su desarrollo en el framework descrito.
             </p>
           </main>
           <footer>
-            <a class="btn" href="#">Ver más</a>
+            <a class="btn" title="Repositorio en GitHub" target="_blank" href="https://github.com/emmanuel-valentin/dgs-web">Ver más</a>
           </footer>
         </div>
         <div class="project card" data-aos="fade-up">
@@ -156,14 +167,11 @@
               Aplicación que consume la
               <span class="text-bold">API de Giphy</span> para mostrar gifs. Fue
               realizada como parte de un curso de
-              <span class="text-bold">React</span> donde también se utilizó
-              <span class="text-bold">Jest</span> y
-              <span class="text-bold">React testing library</span> para la
-              creación de pruebas unitarias y de integración.
+              <span class="text-bold">React</span>. Este proyecto cuenta con pruebas unitarias y de integración, usando bibliotecas como <span class="text-bold">Jest</span> y <span class="text-bold">React Testing Library</span>.
             </p>
           </main>
           <footer>
-            <a class="btn" href="#">Ver más</a>
+            <a class="btn" title="Repositorio en GitHub" target="_blank" href="https://github.com/emmanuel-valentin/gif-expert-app">Ver más</a>
           </footer>
         </div>
         <div class="project card" data-aos="fade-up">
@@ -192,14 +200,11 @@
               Aplicación de tareas construida únicamente con
               <span class="text-bold">HTML</span>,
               <span class="text-bold">CSS</span> y
-              <span class="text-bold">JavaScript</span>. Hace uso del local
-              storage para almacenar las tareas y su estado. Esta aplicación fue
-              construida como parte de un curso de
-              <span class="text-bold">JavaScript</span>.
+              <span class="text-bold">JavaScript</span>. Utiliza el <span class="text-bold">Local Storage</span> para almacenar las tareas y su estado. Fue realizada como parte de un curso de <span class="text-bold">JavaScript</span>.
             </p>
           </main>
           <footer>
-            <a class="btn" href="#">Ver más</a>
+            <a class="btn" title="Repositorio en GitHub" target="_blank" href="https://github.com/emmanuel-valentin/todo-vite-app">Ver más</a>
           </footer>
         </div>
       </div>
@@ -207,7 +212,6 @@
     <section
       id="educacion"
       class="education container border"
-      data-aos="fade-up"
     >
       <h2 class="underline primary-100">Educación</h2>
       <div class="cards overflow">
@@ -233,10 +237,7 @@
             <h3>Escuela Superior de Cómputo</h3>
           </header>
           <main>
-            <p>
-              Estudiante de Ingeniería en Sistemas Computacionales. Actualmente
-              curso el sexto semestre.
-            </p>
+            <p>Estudiante de Ingeniería en Sistemas Computacionales.</p>
           </main>
           <footer><time>2020</time> - <time>Actualmente</time></footer>
         </div>
@@ -301,8 +302,8 @@
         </div>
       </div>
     </section>
-    <section class="container border" data-aos="fade-up">
-      <h2 class="underline primary-100">Tecnologías</h2>
+    <section id="habilidades" class="container border">
+      <h2 class="underline primary-100">Habilidades</h2>
       <div class="cards overflow">
         <div class="card school" data-aos="fade-up">
           <header>
@@ -328,8 +329,7 @@
           <main>
             Diseño de interfaces gráficas con ayuda de aplicaciones de diseño
             como <span class="text-bold">Figma</span> y
-            <span class="text-bold">Photoshop</span>, siguiendo las mejores
-            prácticas para garantizar diseños simples, intuitivos y agradables.
+            <span class="text-bold">Photoshop</span> para crear diseños simples, intuitivos y agradables.
           </main>
         </div>
         <div class="card school" data-aos="fade-up">
@@ -355,13 +355,13 @@
           </header>
           <main>
             <p>
-              Desarrollo de aplicaciones web usando tecnologías como
+              Desarrollo de aplicaciones web con
               <span class="text-bold">HTML</span>,
               <span class="text-bold">CSS</span> y
               <span class="text-bold">JavaScript</span>. Además de frameworks y
-              librerías como <span class="text-bold">React</span> y
+              bibliotecas como <span class="text-bold">React</span> y
               <span class="text-bold">Next.js</span>
-              facilitando su creación y programación.
+              facilitando su creación.
             </p>
           </main>
         </div>
@@ -397,10 +397,10 @@
         </div>
       </div>
     </section>
-    <section class="container contact border" data-aos="fade-up">
+    <section id="contacto" class="container contact border">
       <h2 class="underline primary-100">Contacto</h2>
       <h3>¡Trabajemos juntos y construyamos algo nuevo!</h3>
-      <form action="https://formspree.io/f/mpzgwqgb" method="post" class="form">
+      <form action="https://formspree.io/f/mpzgwqgb" method="post" class="form" data-aos="fade-up">
         <label
           >Nombre:
           <input
@@ -432,15 +432,14 @@
           <textarea
             name="message"
             placeholder="Ingresa tu mensaje"
-            required
             autocomplete="off"
           ></textarea>
         </label>
         <input class="btn" type="submit" />
       </form>
     </section>
-    <footer class="footer" data-aos="fade-up">
-      <div class="container">
+    <footer class="footer">
+      <div class="container" data-aos="fade-up">
         <img
           class="logo"
           src="./src/assets/icons/logo.svg"
