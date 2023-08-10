@@ -83,6 +83,7 @@ abbr[title] {
 }
 
 .text-bold {
+  color: var(--text-100);
   font-weight: 700;
 }
 

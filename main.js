@@ -20,8 +20,6 @@ const setIsNavVisible = (event) => {
 };
 
 toogleButtonElement.addEventListener('click', setIsNavVisible);
-
-// Esconde el nav cuando se hace click en algún enlace
 navElement.addEventListener('click', setIsNavVisible);
 
 AOS.init();
